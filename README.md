@@ -11,6 +11,5 @@ The user will be able to:
 ## Run the application
 - To build the application, run `mvn clean install` on the command line
 - To run the application, run `mvn spring-boot:run` on the command line
-
-Hit the URL https://localhost:8080/search/key_word to fetch the matching stock options 
-
+- Go to https://localhost:8080 on the browser and search for a stock name, for eg., MSFT and get its current price
+- Use the Buy button
