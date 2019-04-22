@@ -1,6 +1,5 @@
 package demo.qwilr.controller;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import demo.qwilr.model.GlobalQuote;
 import demo.qwilr.service.StockSearchService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,10 +8,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
-import java.security.KeyManagementException;
-import java.security.KeyStoreException;
-import java.security.NoSuchAlgorithmException;
-import java.security.cert.CertificateException;
 
 @RestController
 public class PortfolioController {
