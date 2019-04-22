@@ -55,31 +55,22 @@
           $("button").click(function(){
             var $key = $("#myInput").val();
             $.get("http://localhost:8080/search/"+$key, function(data, status){
-
-                var names = data;
-		        var ul = document.createElement('ul');
-		        document.getElementById('myUL').appendChild(ul);
-
-		        names.forEach(function(name){
-			        var li = document.createElement('li');
-			        ul.appendChild(li);
-			        li.innerHTML += name;
-		        });
-
+                document.getElementById('display').innerHTML = data["Global Quote"]["05. price"];
             });
           });
         });
-</script>
+
+    </script>
 </head>
 <body>
 
 <h2>Fake Stock Management</h2>
 
 
-<input type="text" id="myInput" placeholder="Search for name..">
+<input type="text" id="myInput" placeholder="Search for stock..">
 <button type="button" id="button">Search</button>
-
-<ul id="myUL"></ul>
-
+<br>
+<label>Price found: </label>
+<span id='display'></span>
 </body>
 </html>
