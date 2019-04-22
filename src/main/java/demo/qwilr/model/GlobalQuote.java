@@ -14,4 +14,11 @@ public class GlobalQuote {
     public void setParameters(GlobalQuoteParameters parameters) {
         this.parameters = parameters;
     }
+
+    @Override
+    public String toString() {
+        return "GlobalQuote{" +
+                "parameters=" + parameters +
+                '}';
+    }
 }

@@ -104,4 +104,20 @@ public class GlobalQuoteParameters {
     public void setChangePercent(String changePercent) {
         this.changePercent = changePercent;
     }
+
+    @Override
+    public String toString() {
+        return "GlobalQuoteParameters{" +
+                "symbol='" + symbol + '\'' +
+                ", open='" + open + '\'' +
+                ", high='" + high + '\'' +
+                ", low='" + low + '\'' +
+                ", price='" + price + '\'' +
+                ", volume='" + volume + '\'' +
+                ", latestTradingDay='" + latestTradingDay + '\'' +
+                ", previousClose='" + previousClose + '\'' +
+                ", change='" + change + '\'' +
+                ", changePercent='" + changePercent + '\'' +
+                '}';
+    }
 }
