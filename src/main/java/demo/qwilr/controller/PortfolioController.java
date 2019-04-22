@@ -1,5 +1,7 @@
 package demo.qwilr.controller;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import demo.qwilr.model.GlobalQuote;
 import demo.qwilr.service.StockSearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +21,7 @@ public class PortfolioController {
     private StockSearchService service;
 
     @GetMapping(value = "/search/{key}")
-    public String instantSearch(@PathVariable String key) throws IOException, CertificateException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException {
+    public GlobalQuote instantSearch(@PathVariable String key) throws IOException {
         System.out.println("Inside PortfolioController");
         return service.getMatchingStocks(key);
     }
