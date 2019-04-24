@@ -64,7 +64,7 @@
         $(document).ready(function(){
           $("#search").click(function(){
             var $key = $("#myInput").val();
-            $.get("http://localhost:8080/search/"+$key, function(data, status){
+            $.get("https://young-wildwood-48902.herokuapp.com/search/"+$key, function(data, status){
                 document.getElementById('display').innerHTML = data["Global Quote"]["05. price"];
             });
           });
